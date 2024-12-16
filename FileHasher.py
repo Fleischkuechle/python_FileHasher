@@ -96,7 +96,7 @@ def test() -> str:
         file_to_hash_name,
     )
     # Generate the hash
-    generated_hash = filehasher.generate_hash(file_path)
+    generated_hash: str = filehasher.generate_hash(file_path)
     print(" ")
     print("-" * 40)
     print(f"Generating {algorithm} hash for: {file_to_hash_name}")
